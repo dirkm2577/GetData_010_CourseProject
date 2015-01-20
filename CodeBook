@@ -1,0 +1,173 @@
+by Dirk Mischke
+Jan 2015
+
+"Course Project for "Geting and Cleaning Data"-Course in the Data Science Specialization on Coursera""
+
+
+CODEBOOK for the HAR_dataset
+
+The dataset contains 10299 observations for 81 variables from 30 subjects.
+The first two variables are identifiers for the subject and the activity that was measured. The following 79 variables are the normalized measurements.
+
+
+ [1] "Subjects"     -      numbers 1 - 30
+                                               
+ [2] "Activity"     -      values = "Walking", "Walking_Upstairs", "Walking_Downstairs", "Sitting", "Standing", "Laying"                                               
+ 
+ [3] "X_axial_Body_Acceleration_in_time_domain_mean"        -     range[-1, 1], mean of measurements from Body Accelerometer along X-axes in time (sec)           
+ 
+ [4] "Y_axial_Body_Acceleration_in_time_domain_mean"        -     range[-1, 1], mean of measurements from Body Accelerometer along Y-axes in time (sec)          
+ 
+ [5] "Z_axial_Body_Acceleration_in_time_domain_mean"        -     range[-1, 1], mean of measurements from Body Accelerometer along Z-axes in time (sec)          
+ 
+ [6] "X_axial_Gravity_Acceleration_in_time_domain_mean"     -     range[-1, 1], mean of measurements from Gravity Accelerometer along X-axes in time (sec)        
+ 
+ [7] "Y_axial_Gravity_Acceleration_in_time_domain_mean"     -     range[-1, 1], mean of measurements from Gravity Accelerometer along Y-axes in time (sec)        
+ 
+ [8] "Z_axial_Gravity_Acceleration_in_time_domain_mean"     -     range[-1, 1], mean of measurements from Gravity Accelerometer along Z-axes in time (sec)        
+ 
+ [9] "X_axial_Body_Acceleration_Jerk_in_time_domain_mean"   -     range[-1, 1], mean of measurements from Body Accelerometer and angular velocity along X-axes in time (sec)      
+
+[10] "Y_axial_Body_Acceleration_Jerk_in_time_domain_mean"   -     range[-1, 1], mean of measurements from Body Accelerometer and angular velocity along Y-axes in time (sec)      
+
+[11] "Z_axial_Body_Acceleration_Jerk_in_time_domain_mean"   -     range[-1, 1], mean of measurements from Body Accelerometer and angular velocity along Z-axes in time (sec)      
+
+[12] "X_axial_Body_Gyration_in_time_domain_mean"            -     range[-1, 1], mean of measurements from Body Gyroscope along X-axes in time (sec)               
+
+[13] "Y_axial_Body_Gyration_in_time_domain_mean"            -     range[-1, 1], mean of measurements from Body Gyroscope along Y-axes in time (sec)               
+
+[14] "Z_axial_Body_Gyration_in_time_domain_mean"            -     range[-1, 1], mean of measurements from Body Gyroscope along Z-axes in time (sec)               
+
+[15] "X_axial_Body_Gyration_Jerk_in_time_domain_mean"       -     range[-1, 1], mean of measurements from Body Gyroscope and angular velocity along X-axes in time (sec)          
+
+[16] "Y_axial_Body_Gyration_Jerk_in_time_domain_mean"       -     range[-1, 1], mean of measurements from Body Gyroscope and angular velocity along Y-axes in time (sec)          
+
+[17] "Z_axial_Body_Gyration_Jerk_in_time_domain_mean"       -     range[-1, 1], mean of measurements from Body Gyroscope and angular velocity along Z-axes in time (sec)          
+
+[18] "Body_Acceleration_Magnitude_in_time_domain_mean"      -     range[-1, 1], mean of measurements from Body Accelerometer and its Magnitude (Euclidean norm) in time (sec)         
+
+[19] "Gravity_Acceleration_Magnitude_in_time_domain_mean"   -     range[-1, 1], mean of measurements from Gravity Accelerometer and its Magnitude (Euclidean norm) in time (sec)      
+
+[20] "Body_Acceleration_Jerk_Magnitude_in_time_domain_mean" -     range[-1, 1], mean of measurements from Body Accelerometer, angular velocity and its Magnitude (Euclidean norm) in time (sec)    
+
+[21] "Body_Gyration_Magnitude_in_time_domain_mean"          -     range[-1, 1], mean of measurements from Body Gyroscope and its Magnitude (Euclidean norm) in time (sec)             
+
+[22] "Body_Gyration_Jerk_Magnitude_in_time_domain_mean"     -     range[-1, 1], mean of measurements from Body Gyroscope, angular velocity and its Magnitude (Euclidean norm) in time (sec)       
+
+[23] "X_axial_Body_Acceleration_in_frequency_domain_mean"   -     range[-1, 1], mean of measurements from Body Accelerometer along X-axes in frequency (Hz)     
+
+[24] "Y_axial_Body_Acceleration_in_frequency_domain_mean"   -     range[-1, 1], mean of measurements from Body Accelerometer along Y-axes in frequency (Hz)      
+
+[25] "Z_axial_Body_Acceleration_in_frequency_domain_mean"   -     range[-1, 1], mean of measurements from Body Accelerometer along Z-axes in frequency (Hz)      
+
+[26] "fBodyAcc.meanFreq...X"        -        range[-1, 1], mean of frequency from Body Accelerometer along X-axes in time (sec)                                  
+
+[27] "fBodyAcc.meanFreq...Y"        -        range[-1, 1], mean of frequency from Body Accelerometer along Y-axes in time (sec)                                   
+
+[28] "fBodyAcc.meanFreq...Z"        -        range[-1, 1], mean of frequency from Body Accelerometer along Z-axes in time (sec)                                   
+
+[29] "X_axial_Body_Acceleration_Jerk_in_frequency_domain_mean" - range[-1, 1], mean of measurements from Body Accelerometer and angular velocity along X-axes in frequency (Hz) 
+
+[30] "Y_axial_Body_Acceleration_Jerk_in_frequency_domain_mean" - range[-1, 1], mean of measurements from Body Accelerometer and angular velocity along Y-axes in frequency (Hz) 
+
+[31] "Z_axial_Body_Acceleration_Jerk_in_frequency_domain_mean" - range[-1, 1], mean of measurements from Body Accelerometer and angular velocity along Z-axes in frequency (Hz) 
+
+[32] "fBodyAccJerk.meanFreq...X"    -    range[-1, 1], mean of frequency from Body Accelerometer and angular velocity along X-axes in time (sec)                               
+
+[33] "fBodyAccJerk.meanFreq...Y"    -    range[-1, 1], mean of frequency from Body Accelerometer and angular velocity along Y-axes in time (sec)                               
+
+[34] "fBodyAccJerk.meanFreq...Z"    -    range[-1, 1], mean of frequency from Body Accelerometer and angular velocity along Z-axes in time (sec)                               
+
+[35] "X_axial_Body_Gyration_in_frequency_domain_mean"   -    range[-1, 1], mean of measurements from Body Gyroscope along X-axes in frequency (Hz)          
+
+[36] "Y_axial_Body_Gyration_in_frequency_domain_mean"   -    range[-1, 1], mean of measurements from Body Gyroscope along Y-axes in frequency (Hz)         
+
+[37] "Z_axial_Body_Gyration_in_frequency_domain_mean" - range[-1, 1], mean of measurements from Body Gyroscope along Z-axes in frequency (Hz)          
+
+[38] "fBodyGyro.meanFreq...X"       -        range[-1, 1], mean of frequency from Body Gyroscope along X-axes in frequency (Hz)                                  
+
+[39] "fBodyGyro.meanFreq...Y"       -        range[-1, 1], mean of frequency from Body Gyroscope along Y-axes in frequency (Hz)                                  
+
+[40] "fBodyGyro.meanFreq...Z"       -        range[-1, 1], mean of frequency from Body Gyroscope along Z-axes in frequency (Hz)                                  
+
+[41] "Body_Acceleration_Magnitude_in_frequency_domain_mean" - range[-1, 1], mean of measurements from Body Accelerometer and its Magnitude (Euclidean norm) in frequency (Hz)    
+
+[42] "fBodyAccMag.meanFreq.."       -        range[-1, 1], mean of frequency from Body Accelerometer and Magnitude in frequency (Hz)                               
+
+[43] "Body_Acceleration_Jerk_Magnitude_in_frequency_domain_mean" - range[-1, 1], mean of measurements from Body Accelerometer, angular velocity and its Magnitude (Euclidean norm) in frequency (Hz)
+
+[44] "fBodyBodyAccJerkMag.meanFreq.."  -      range[-1, 1], mean of frequency from Body Accelerometer, angular velocity and Magnitude in frequency (Hz)                         
+
+[45] "Body_Gyration_Magnitude_in_frequency_domain_mean" - range[-1, 1], mean of measurements from Body Gyroscope and its Magnitude (Euclidean norm) in frequency (Hz)        
+
+[46] "fBodyBodyGyroMag.meanFreq.."    -        range[-1, 1], mean of frequency from Body Gyroscope and Magnitude in frequency (Hz)                          
+
+[47] "Body_Gyration_Jerk_Magnitude_in_frequency_domain_mean" - range[-1, 1], mean of measurements from Body Gyroscope, angular velocity and its Magnitude (Euclidean norm) in frequency (Hz)   
+
+[48] "fBodyBodyGyroJerkMag.meanFreq.."     -        range[-1, 1], mean of frequency from Body Gyroscope, angular velocity and Magnitude in frequency (Hz)                     
+
+[49] "X_axial_Body_Acceleration_in_time_domain_std"     -    range[-1, 1], standard deviation of measurements from Body Accelerometer along X-axes in time (sec)            
+
+[50] "Y_axial_Body_Acceleration_in_time_domain_std"     -    range[-1, 1], standard deviation of measurements from Body Accelerometer along Y-axes in time (sec)            
+
+[51] "Z_axial_Body_Acceleration_in_time_domain_std"     -    range[-1, 1], standard deviation of measurements from Body Accelerometer along Z-axes in time (sec)            
+
+[52] "X_axial_Gravity_Acceleration_in_time_domain_std"  -    range[-1, 1], standard deviation of measurements from Gravity Accelerometer along X-axes in time (sec)         
+
+[53] "Y_axial_Gravity_Acceleration_in_time_domain_std"  -    range[-1, 1], standard deviation of measurements from Gravity Accelerometer along Y-axes in time (sec)         
+
+[54] "Z_axial_Gravity_Acceleration_in_time_domain_std"  -    range[-1, 1], standard deviation of measurements from Gravity Accelerometer along Z-axes in time (sec)         
+
+[55] "X_axial_Body_Acceleration_Jerk_in_time_domain_std"    -    range[-1, 1], standard deviation of measurements from Body Accelerometer and angular velocity along X-axes in time (sec)       
+
+[56] "Y_axial_Body_Acceleration_Jerk_in_time_domain_std"    -    range[-1, 1], standard deviation of measurements from Body Accelerometer and angular velocity along Y-axes in time (sec)       
+
+[57] "Z_axial_Body_Acceleration_Jerk_in_time_domain_std"    -    range[-1, 1], standard deviation of measurements from Body Accelerometer and angular velocity along Z-axes in time (sec)       
+
+[58] "X_axial_Body_Gyration_in_time_domain_std"     -    range[-1, 1], standard deviation of measurements from Body Gyroscope along X-axes in time (sec)                
+
+[59] "Y_axial_Body_Gyration_in_time_domain_std"     -    range[-1, 1], standard deviation of measurements from Body Gyroscope along Y-axes in time (sec)                
+
+[60] "Z_axial_Body_Gyration_in_time_domain_std"     -    range[-1, 1], standard deviation of measurements from Body Gyroscope along Z-axes in time (sec)                
+
+[61] "X_axial_Body_Gyration_Jerk_in_time_domain_std"    -   range[-1, 1], standard deviation of measurements from Body Gyroscope and angular velocity along X-axes in time (sec)           
+
+[62] "Y_axial_Body_Gyration_Jerk_in_time_domain_std"    -    range[-1, 1], standard deviation of measurements from Body Gyroscope and angular velocity along Y-axes in time (sec)        
+
+[63] "Z_axial_Body_Gyration_Jerk_in_time_domain_std"    -    range[-1, 1], standard deviation of measurements from Body Gyroscope and angular velocity along Z-axes in time (sec)           
+
+[64] "Body_Acceleration_Magnitude_in_time_domain_std"       -        range[-1, 1], standard deviation of measurements from Body Accelerometer and its Magnitude (Euclidean norm) in time (sec)          
+
+[65] "Gravity_Acceleration_Magnitude_in_time_domain_std"    -        range[-1, 1], standard deviation of measurements from Gravity Accelerometer and its Magnitude (Euclidean norm) in time (sec)       
+
+[66] "Body_Acceleration_Jerk_Magnitude_in_time_domain_std"  -        range[-1, 1], standard deviation of measurements from Body Accelerometer, angular velocity and its Magnitude (Euclidean norm) in time (sec)     
+
+[67] "Body_Gyration_Magnitude_in_time_domain_std"           -        range[-1, 1], standard deviation of measurements from Body Gyroscope and its Magnitude (Euclidean norm) in time (sec)              
+
+[68] "Body_Gyration_Jerk_Magnitude_in_time_domain_std"      -        range[-1, 1], standard deviation of measurements from Body Gyroscope, angular velocity and its Magnitude (Euclidean norm) in time (sec)         
+
+[69] "X_axial_Body_Acceleration_in_frequency_domain_std"    -    range[-1, 1], standard deviation of measurements from Body Accelerometer along X-axes in frequency (Hz)       
+
+[70] "Y_axial_Body_Acceleration_in_frequency_domain_std"    -    range[-1, 1], standard deviation of measurements from Body Accelerometer along Y-axes in frequency (Hz)       
+
+[71] "Z_axial_Body_Acceleration_in_frequency_domain_std"    -    range[-1, 1], standard deviation of measurements from Body Accelerometer along Z-axes in frequency (Hz)       
+
+[72] "X_axial_Body_Acceleration_Jerk_in_frequency_domain_std" - range[-1, 1], standard deviation of measurements from Body Accelerometer and angular velocity along X-axes in frequency (Hz)  
+
+[73] "Y_axial_Body_Acceleration_Jerk_in_frequency_domain_std" - range[-1, 1], standard deviation of measurements from Body Accelerometer and angular velocity along Y-axes in frequency (Hz)  
+
+[74] "Z_axial_Body_Acceleration_Jerk_in_frequency_domain_std" - range[-1, 1], standard deviation of measurements from Body Accelerometer and angular velocity along Z-axes in frequency (Hz)  
+
+[75] "X_axial_Body_Gyration_in_frequency_domain_std"    -    range[-1, 1], standard deviation of measurements from Body Gyroscope along X-axes in frequency (Hz)           
+
+[76] "Y_axial_Body_Gyration_in_frequency_domain_std"    -    range[-1, 1], standard deviation of measurements from Body Gyroscope along Y-axes in frequency (Hz)           
+
+[77] "Z_axial_Body_Gyration_in_frequency_domain_std"    -    range[-1, 1], standard deviation of measurements from Body Gyroscope along Z-axes in frequency (Hz)           
+
+[78] "Body_Acceleration_Magnitude_in_frequency_domain_std"      -    range[-1, 1], standard deviation of measurements from Body Accelerometer and its Magnitude (Euclidean norm) in frequency (Hz)     
+
+[79] "Body_Acceleration_Jerk_Magnitude_in_frequency_domain_std" -    range[-1, 1], standard deviation of measurements from Body Accelerometer, angular velocity and its Magnitude (Euclidean norm) in frequency (Hz) 
+
+[80] "Body_Gyration_Magnitude_in_frequency_domain_std"          -    range[-1, 1], standard deviation of measurements from Body Gyroscope and its Magnitude (Euclidean norm) in frequency (Hz)         
+
+[81] "Body_Gyration_Jerk_Magnitude_in_frequency_domain_std"     -    range[-1, 1], standard deviation of measurements from Body Gyroscope, angular velocity and its Magnitude (Euclidean norm) in frequency (Hz)
